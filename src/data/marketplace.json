@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "id": "bottle-1",
+      "name": "Reusable Water Bottle",
+      "description": "BPA-free, keeps water cool for 12 hours",
+      "points": 500,
+      "imageUrl": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=200",
+      "category": "hydration"
+    },
+    {
+      "id": "bag-1",
+      "name": "Eco Tote Bag",
+      "description": "Durable cotton bag for shopping",
+      "points": 300,
+      "imageUrl": "https://images.unsplash.com/photo-1597484661973-ee6cd0b6482c?w=200",
+      "category": "bags"
+    },
+    {
+      "id": "container-1",
+      "name": "Food Container Set",
+      "description": "3 stackable containers for meals",
+      "points": 450,
+      "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=200",
+      "category": "kitchen"
+    },
+    {
+      "id": "utensil-1",
+      "name": "Bamboo Utensil Set",
+      "description": "Fork, knife, spoon, and chopsticks",
+      "points": 250,
+      "imageUrl": "https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=200",
+      "category": "kitchen"
+    },
+    {
+      "id": "cap-1",
+      "name": "GreenHajj Cap",
+      "description": "Organic cotton cap with logo",
+      "points": 200,
+      "imageUrl": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=200",
+      "category": "apparel"
+    },
+    {
+      "id": "towel-1",
+      "name": "Microfiber Travel Towel",
+      "description": "Quick-dry, compact, eco-friendly",
+      "points": 350,
+      "imageUrl": "https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=200",
+      "category": "accessories"
+    }
+  ]
+}

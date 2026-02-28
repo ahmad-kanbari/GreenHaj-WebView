@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #022c18;
+  --accent: #16a34a;
+  --card: #f0fdf4;
+  --muted: #dcfce7;
+  --border: #16a34a;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0fdf4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #16a34a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #15803d;
+}
+
+/* Glass effect utility */
+.glass {
+  background: rgba(240, 253, 244, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(22, 163, 74, 0.3);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-bottom: 2px solid rgba(22, 163, 74, 0.4);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #15803d, #16a34a, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-gold {
+  background: linear-gradient(135deg, #d4a017, #fbbf24, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effects */
+.glow-green {
+  box-shadow: 0 0 30px rgba(22, 163, 74, 0.3), 0 0 60px rgba(22, 163, 74, 0.12);
+}
+
+.glow-green-sm {
+  box-shadow: 0 0 15px rgba(22, 163, 74, 0.25);
+}
+
+/* Section separator */
+.section-divider {
+  background: linear-gradient(90deg, transparent, rgba(22, 163, 74, 0.5), transparent);
+  height: 2px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ElevenLabs widget positioning */
+elevenlabs-convai {
+  --elevenlabs-convai-bottom: 24px !important;
+}
+
+/* Card hover glow */
+.card-hover-glow {
+  transition: all 0.3s ease;
+}
+.card-hover-glow:hover {
+  box-shadow: 0 4px 32px rgba(22, 163, 74, 0.2);
+  border-color: rgba(22, 163, 74, 0.7);
+  transform: translateY(-2px);
+}
+
+/* Animate on scroll observer */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

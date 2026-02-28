@@ -1,0 +1,114 @@
+{
+  "routes": [
+    {
+      "id": "train-mina",
+      "mode": "train",
+      "name": "Mashair Railway",
+      "from": "Al Aziziyah",
+      "to": "Mina",
+      "eta": "12 min",
+      "co2Saved": 1.2,
+      "crowdLevel": "moderate",
+      "peakWarning": "Busy after Fajr prayer",
+      "steps": [
+        "Walk to Al Aziziyah Station (5 min)",
+        "Board Mashair Railway toward Mina",
+        "Exit at Mina Station Gate 2"
+      ]
+    },
+    {
+      "id": "bus-mina",
+      "mode": "bus",
+      "name": "Hajj Bus Service",
+      "from": "Al Aziziyah",
+      "to": "Mina",
+      "eta": "25 min",
+      "co2Saved": 0.6,
+      "crowdLevel": "high",
+      "peakWarning": null,
+      "steps": [
+        "Walk to bus stop near hotel",
+        "Take Route 4 bus to Mina",
+        "Exit at Mina central stop"
+      ]
+    },
+    {
+      "id": "walk-mina",
+      "mode": "walk",
+      "name": "Walking Route",
+      "from": "Al Aziziyah",
+      "to": "Mina",
+      "eta": "45 min",
+      "co2Saved": 1.8,
+      "crowdLevel": "low",
+      "peakWarning": null,
+      "stepsCount": 4500,
+      "steps": [
+        "Exit hotel and head north toward Mina",
+        "Follow pedestrian signs along main road",
+        "Enter Mina through Gate 5"
+      ]
+    },
+    {
+      "id": "train-arafat",
+      "mode": "train",
+      "name": "Mashair Railway",
+      "from": "Mina",
+      "to": "Arafat",
+      "eta": "15 min",
+      "co2Saved": 1.5,
+      "crowdLevel": "moderate",
+      "peakWarning": "Very busy on Day of Arafat",
+      "steps": [
+        "Walk to Mina Railway Station",
+        "Board train toward Arafat",
+        "Exit at Arafat Station"
+      ]
+    },
+    {
+      "id": "train-jamarat",
+      "mode": "train",
+      "name": "Mashair Railway",
+      "from": "Mina",
+      "to": "Jamarat",
+      "eta": "8 min",
+      "co2Saved": 0.9,
+      "crowdLevel": "high",
+      "peakWarning": "Peak times: after Dhuhr on Eid days",
+      "steps": [
+        "Walk to Mina Railway Station",
+        "Board train toward Jamarat Bridge",
+        "Exit at Level 4 or 5 for less crowding"
+      ]
+    },
+    {
+      "id": "train-haram",
+      "mode": "train",
+      "name": "Mashair Railway to Haram",
+      "from": "Mina",
+      "to": "Haram",
+      "eta": "20 min",
+      "co2Saved": 1.8,
+      "crowdLevel": "moderate",
+      "peakWarning": "Very busy before Jumu'ah",
+      "steps": [
+        "Walk to Mina Railway Station",
+        "Board train toward Makkah terminal",
+        "Walk from station to Al-Masjid Al-Haram"
+      ]
+    }
+  ],
+  "origins": [
+    "Al Aziziyah",
+    "Mina",
+    "Arafat",
+    "Muzdalifah"
+  ],
+  "destinations": [
+    "Haram",
+    "Mina",
+    "Arafat",
+    "Muzdalifah",
+    "Jamarat"
+  ]
+}

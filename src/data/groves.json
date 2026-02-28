@@ -1,0 +1,60 @@
+{
+  "groves": [
+    {
+      "id": "grove-makkah-1",
+      "name": "Makkah Green Grove",
+      "city": "Makkah",
+      "totalTrees": 1250,
+      "plantedDate": "2025-06-15",
+      "description": "Native acacia and sidra trees planted in the hills surrounding Makkah",
+      "imageUrl": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=400",
+      "coordinates": {
+        "lat": 21.4225,
+        "lng": 39.8262
+      }
+    },
+    {
+      "id": "grove-madinah-1",
+      "name": "Madinah Date Palm Grove",
+      "city": "Madinah",
+      "totalTrees": 800,
+      "plantedDate": "2025-08-20",
+      "description": "Traditional date palms restoring agricultural heritage",
+      "imageUrl": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=400",
+      "coordinates": {
+        "lat": 24.5247,
+        "lng": 39.5692
+      }
+    },
+    {
+      "id": "grove-makkah-2",
+      "name": "Pilgrim's Legacy Forest",
+      "city": "Makkah",
+      "totalTrees": 2100,
+      "plantedDate": "2026-01-10",
+      "description": "Desert-adapted trees funded by Hajj pilgrims",
+      "imageUrl": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400",
+      "coordinates": {
+        "lat": 21.3891,
+        "lng": 39.8579
+      }
+    }
+  ],
+  "treeTypes": [
+    {
+      "name": "Acacia tortilis",
+      "commonName": "Umbrella Thorn",
+      "co2PerYear": 21
+    },
+    {
+      "name": "Ziziphus spina-christi",
+      "commonName": "Sidra Tree",
+      "co2PerYear": 18
+    },
+    {
+      "name": "Phoenix dactylifera",
+      "commonName": "Date Palm",
+      "co2PerYear": 15
+    }
+  ]
+}
