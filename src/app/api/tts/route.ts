@@ -11,6 +11,10 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "No text provided" }, { status: 400 });
     }
 
+    if (!ELEVENLABS_API_KEY) {
+      return NextResponse.json({ error: "ElevenLabs API key not configured" }, { status: 500 });
+    }
+
     const response = await fetch(
       `https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}`,
       {
