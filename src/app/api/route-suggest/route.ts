@@ -104,6 +104,10 @@ export async function POST(request: NextRequest) {
       }
     ];
 
+    if (!OPENAI_API_KEY) {
+      return NextResponse.json(getMockRouteResult(origin, destination));
+    }
+
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {

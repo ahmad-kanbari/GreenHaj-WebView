@@ -47,6 +47,10 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "No image provided" }, { status: 400 });
     }
 
+    if (!OPENAI_API_KEY) {
+      return NextResponse.json({ error: "OpenAI API key not configured" }, { status: 500 });
+    }
+
     const imageUrl = image.includes("data:") ? image : `data:image/jpeg;base64,${image}`;
     const prompt = SYSTEM_PROMPT.replace("{proof_type}", type || "unknown");
 
